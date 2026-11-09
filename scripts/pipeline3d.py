@@ -149,7 +149,8 @@ def main():
                 cmd += ["--kiss", P["lidar3d"]]
             dt = run(cmd, log)
         elif st == "map":
-            cmd = [PY, ROOT / "scripts" / "build_occ3d.py", P["detections"], h5, "--slam", P["slam"], "--out", str(P[st])[:-4]]
+            cmd = [PY, ROOT / "scripts" / "build_occ3d.py", P["detections"], h5, "--slam", P["slam"],
+                   "--vol", P["volumes"].parent, "--out", str(P[st])[:-4]]
             if use_lidar:
                 cmd += ["--kiss", P["lidar3d"]]
             dt = run(cmd, log)
