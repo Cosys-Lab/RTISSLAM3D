@@ -1,0 +1,5 @@
+# Optional 3D lidar SLAM reference (scripts/lidar3d_slam.py), best in a separate environment;
+# point the pipeline to it with RTIS3D_LIDAR_PYTHON=/path/to/that/python
+kiss-icp==1.3.0
+kiss-slam==0.0.2
+h5py==3.16.0

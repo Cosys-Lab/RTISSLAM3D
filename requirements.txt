@@ -1,0 +1,15 @@
+# RTISSLAM-3D (tested with Python 3.12)
+numpy==1.26.4
+scipy==1.11.4
+torch==2.14.1          # GPU strongly recommended (imaging, CFAR)
+h5py==3.16.0
+matplotlib==3.6.3
+gtsam==4.2.2
+imageio==2.38.1
+imageio-ffmpeg==0.6.0
+# videos only
+opencv-python
+pymupdf
+# Cosys-Lab packages, not on PyPI (see the README):
+#   chirppy==2.0.0     reader for CHIRP HDF5 recordings
+#   rtiscuda==2.7.0    RTIS CUDA imaging (delay-and-sum / DMAS beamforming on the GPU)
